@@ -1,0 +1,24 @@
+.child {
+    border: 3px solid #fff;
+    padding: 100px;
+    background-color: plum;
+}
+
+.child p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.colorName {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.color {
+    display: inline-block;
+    width: 15px;
+    border-radius: 50%;
+    height: 15px;
+}

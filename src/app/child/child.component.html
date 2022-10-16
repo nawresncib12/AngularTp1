@@ -1,0 +1,10 @@
+<div class="child">
+    <h2>I'm the child component</h2>
+    <p>My favorite color is {{myFavoriteColor}}</p>
+    <p>I can guess my parent's color</p>
+    <div class="colorName">
+        <p>It's {{bgColor}} !!</p>
+        <div class="color" [style.backgroundColor]="bgColor"></div>
+    </div>
+    <button (click)="sendColor()" class="btn btn-light">Click here to change his color to my favorite</button>
+</div>

@@ -1,0 +1,4 @@
+<div class="father" [style.backgroundColor]="bgColor">
+    <app-child (sendData)="changeColor($event)" [bgColor]="bgColor"></app-child>
+    <button (click)="resetColor()" class="btn btn-secondary">Reset</button>
+</div>

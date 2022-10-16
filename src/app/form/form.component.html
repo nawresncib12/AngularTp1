@@ -1,0 +1,30 @@
+<div class="form-group">
+    <label for="nom">Nom</label>
+    <input [(ngModel)]="person.nom" type="text" class="form-control" id="nom">
+</div>
+<div class="form-group">
+    <label for="prenom">Prénom</label>
+    <input [(ngModel)]="person.prenom" type="text" class="form-control" id="prenom">
+</div>
+<div class="form-group">
+    <label for="Job">Job</label>
+    <input [(ngModel)]="person.job" type="text" class="form-control" id="Job">
+</div>
+<div class="form-group">
+    <label for="image">Image</label>
+    <input [(ngModel)]="person.image" type="text" class="form-control" id="image" aria-describedby="imageHelp">
+    <small id="imageHelp" class="form-text text-muted">Available options: lama, cat, wolf.</small>
+
+</div>
+<div class="form-group">
+    <label for="citation">citation favorite</label>
+    <input [(ngModel)]="person.citation" type="text" class="form-control" id="citation">
+</div>
+<div class="form-group">
+    <label for="description">Décrivez nous votre travail</label>
+    <input [(ngModel)]="person.description" type="text" class="form-control" id="description">
+</div>
+<div class="form-group">
+    <label for="keys">Mots clés de votre travail</label>
+    <input [(ngModel)]="person.keys" type="text" class="form-control" id="keys">
+</div>

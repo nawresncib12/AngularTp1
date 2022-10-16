@@ -1,0 +1,7 @@
+<div class="container">
+    <div [style.backgroundColor]="bgColor" class="color">
+        Color
+    </div>
+    <input type="text" [(ngModel)]="bgColor" class="form-control">
+    <button (click)="resetColor()" class="btn btn-secondary">Reset</button>
+</div>
