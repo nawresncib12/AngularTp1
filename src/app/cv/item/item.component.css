@@ -1,0 +1,15 @@
+.item {
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 10px;
+    margin: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.item:hover {
+    background-color: pink;
+    transition: 200ms;
+
+}
