@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Person } from './Model/Person';
+import { Person } from '../Model/Person';
 
 @Component({
   selector: 'app-visit-card',
@@ -10,8 +10,8 @@ export class VisitCardComponent implements OnInit {
   person: Person;
   constructor() {
     this.person = new Person(
-      'boukadida',
-      'taher',
+      'ncib',
+      'nadine',
       'software engineer',
       'lama',
       'The lone wolf dies but the pack survives',
@@ -20,5 +20,5 @@ export class VisitCardComponent implements OnInit {
     );
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }

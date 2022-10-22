@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Person } from '../visit-card/Model/Person';
+import { Person } from '../Model/Person';
 
 @Component({
   selector: 'app-profile',
@@ -8,7 +8,7 @@ import { Person } from '../visit-card/Model/Person';
 })
 export class ProfileComponent implements OnInit {
   @Input() person: any;
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }
