@@ -14,6 +14,9 @@ import { CvComponent } from './cv/cv.component';
 import { ListComponent } from './cv/list/list.component';
 import { DetailComponent } from './cv/detail/detail.component';
 import { ItemComponent } from './cv/item/item.component';
+import { DefaultImagePipe } from './default-image.pipe';
+import { ListeEmbaucheComponent } from './liste-embauche/liste-embauche.component';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -28,8 +31,10 @@ import { ItemComponent } from './cv/item/item.component';
     ListComponent,
     DetailComponent,
     ItemComponent,
+    DefaultImagePipe,
+    ListeEmbaucheComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ToastrModule.forRoot()],
   providers: [],
   bootstrap: [AppComponent],
 })

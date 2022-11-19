@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tp1';
-  active = 0;
+  active = 4;
   changeActive(num: number) {
     this.active = num;
   }
