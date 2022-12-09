@@ -6,6 +6,7 @@ import { DeleteCvComponent } from './cv/delete-cv/delete-cv.component';
 import { DetailCvComponent } from './cv/detail-cv/detail-cv.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { NonStopImagesComponent } from './non-stop-images/non-stop-images.component';
 import { ThirdComponent } from './third/third.component';
 import { VisitCardComponent } from './visit-card/visit-card.component';
 
@@ -48,6 +49,10 @@ const APP_ROUTING: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+  },
+  {
+    path: 'images',
+    component: NonStopImagesComponent,
   },
   {
     path: '**',

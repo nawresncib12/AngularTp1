@@ -25,6 +25,7 @@ import { DetailCvComponent } from './cv/detail-cv/detail-cv.component';
 import { DeleteCvComponent } from './cv/delete-cv/delete-cv.component';
 import { AddCvComponent } from './cv/add-cv/add-cv.component';
 import { LoginComponent } from './login/login.component';
+import { NonStopImagesComponent } from './non-stop-images/non-stop-images.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { LoginComponent } from './login/login.component';
     DetailCvComponent,
     DeleteCvComponent,
     AddCvComponent,
-    LoginComponent
+    LoginComponent,
+    NonStopImagesComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ToastrModule.forRoot(),ROUTING],
   providers: [],
