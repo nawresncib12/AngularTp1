@@ -1,4 +1,7 @@
 export class Cv {
+  subscribe(arg0: (result: any) => void) {
+    throw new Error('Method not implemented.');
+  }
   id: number;
   name: string;
   firstname: string;

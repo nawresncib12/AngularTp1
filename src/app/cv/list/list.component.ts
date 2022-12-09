@@ -11,14 +11,11 @@ import { CvService } from '../cv.service';
 
 export class ListComponent implements OnInit {
   @Input()cvList: Cv[] = []
-  @Output() chosenCv = new EventEmitter<Cv>()
   constructor() {
   }
 
   ngOnInit(): void {
   }
 
-  clicked(cv: Cv) {
-    this.chosenCv.emit(cv)
-  }
+ 
 }

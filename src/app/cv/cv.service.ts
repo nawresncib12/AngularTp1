@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 import { Cv } from '../Model/Cv';
 
 @Injectable({
@@ -26,6 +27,7 @@ export class CvService {
       'assets/images/cat.jpg'
     ),
   ];
+  cv = new Subject();
   constructor() {}
   getCvById(id: number): Cv {
     var res = this.cvList.find((cv) => {

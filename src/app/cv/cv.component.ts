@@ -5,17 +5,17 @@ import { CvService } from './cv.service';
 @Component({
   selector: 'app-cv',
   templateUrl: './cv.component.html',
-  styleUrls: ['./cv.component.css']
+  styleUrls: ['./cv.component.css'],
 })
 export class CvComponent implements OnInit {
-  currentCv: Cv = new Cv()
-  cvList:Cv[]
-  constructor(private cvService: CvService) { 
-    this.cvList = this.cvService.cvList
+  currentCv: any;
+  cvList: Cv[];
+  constructor(private cvService: CvService) {
+    this.cvList = this.cvService.cvList;
   }
   ngOnInit(): void {
-  }
-  setCv(cv: Cv) {
-    this.currentCv = cv
+    this.cvService.cv.subscribe((result) => {
+      this.currentCv = result;
+    });
   }
 }
