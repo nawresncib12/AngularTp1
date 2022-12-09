@@ -1,35 +1,13 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-    <div class="container-fluid">
-        <div class=" navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-md-auto gap-2">
-                <button (click)="changeActive(0)" type="button" class="btn btn-secondary">Acceuil</button>
-                <button (click)="changeActive(1)" type="button" class="btn btn-secondary">Exercice 1</button>
-                <button (click)="changeActive(2)" type="button" class="btn btn-secondary">Exercice 2</button>
-                <button (click)="changeActive(3)" type="button" class="btn btn-secondary">Exercice 3</button>
-                <button (click)="changeActive(4)" type="button" class="btn btn-secondary">Exercice 4</button>
-            </ul>
-        </div>
-    </div>
-</nav>
+<app-header></app-header>
+<app-router-simulator></app-router-simulator>
 <div class="vh-100 d-flex justify-content-center align-items-center">
 
-    <div *ngIf="active==0">
-        <section class="jumbotron text-center">
-            <div class="container">
-                <h1 class="jumbotron-heading">Frameworks de développement</h1>
-                <p class="lead text-muted mt-5">Nadine Boukadida</p>
-                <p class="lead text-muted">Nawres Ncib</p>
-                <p class="lead text-muted">Taher Jerbi</p>
-                <p>
-                </p>
-            </div>
-        </section>
 
-
-
-    </div>
-    <app-color *ngIf="active==1"></app-color>
+    <!-- <app-color *ngIf="active==1"></app-color>
     <app-visit-card *ngIf="active==2"></app-visit-card>
     <app-third *ngIf="active==3"></app-third>
-    <app-cv *ngIf="active==4"></app-cv>
+    <app-cv *ngIf="active==4"></app-cv> -->
+
+    <router-outlet>
+    </router-outlet>
 </div>

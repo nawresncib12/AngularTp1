@@ -17,6 +17,11 @@ import { ItemComponent } from './cv/item/item.component';
 import { DefaultImagePipe } from './default-image.pipe';
 import { ListeEmbaucheComponent } from './liste-embauche/liste-embauche.component';
 import { ToastrModule } from 'ngx-toastr';
+import { ROUTING } from './app.routing';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
+import { DetailCvComponent } from './cv/detail-cv/detail-cv.component';
 
 @NgModule({
   declarations: [
@@ -33,8 +38,12 @@ import { ToastrModule } from 'ngx-toastr';
     ItemComponent,
     DefaultImagePipe,
     ListeEmbaucheComponent,
+    HeaderComponent,
+    HomeComponent,
+    RouterSimulatorComponent,
+    DetailCvComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, ToastrModule.forRoot()],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ToastrModule.forRoot(),ROUTING],
   providers: [],
   bootstrap: [AppComponent],
 })
