@@ -22,6 +22,9 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
 import { DetailCvComponent } from './cv/detail-cv/detail-cv.component';
+import { DeleteCvComponent } from './cv/delete-cv/delete-cv.component';
+import { AddCvComponent } from './cv/add-cv/add-cv.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import { DetailCvComponent } from './cv/detail-cv/detail-cv.component';
     HeaderComponent,
     HomeComponent,
     RouterSimulatorComponent,
-    DetailCvComponent
+    DetailCvComponent,
+    DeleteCvComponent,
+    AddCvComponent,
+    LoginComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ToastrModule.forRoot(),ROUTING],
   providers: [],

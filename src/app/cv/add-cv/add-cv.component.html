@@ -1,0 +1,15 @@
+<form #formulaire="ngForm">
+    <label for="name">Name</label>
+    <input required class="form-control" id="name" type="text" ngModel name="name">
+    <label for="firstname">Firstname</label>
+    <input required class="form-control" id="firstname" type="text" ngModel name="firstname">
+    <label for="age">Age</label>
+    <input min="0" class="form-control" id="age" type="number" ngModel name="age">
+    <label for="cin">Cin</label>
+    <input required class="form-control" id="cin" type="number" ngModel name="cin">
+    <label for="job">Job</label>
+    <input class="form-control" id="job" type="text" ngModel name="job">
+    <label for="path">Image</label>
+    <input class="form-control" id="path" placeholder="assets/images/wolf.jpg" type="text" ngModel name="path">
+    <button class="btn btn-primary mt-5" (click)="addCv(formulaire)">Ajouter</button>
+</form>

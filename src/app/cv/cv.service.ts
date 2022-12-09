@@ -16,6 +16,15 @@ export class CvService {
       8856936,
       'assets/images/wolf.jpg'
     ),
+    new Cv(
+      3,
+      'Nawres',
+      'Chef',
+      'Nawres',
+      22,
+      97856936,
+      'assets/images/cat.jpg'
+    ),
   ];
   constructor() {}
   getCvById(id: number): Cv {
@@ -26,5 +35,13 @@ export class CvService {
     else {
       return new Cv(0, 'unkown', 'unkown', 'unkown', 11, 11111111);
     }
+  }
+  addCv(cv: Cv): void {
+    cv.id = this.cvList[this.cvList.length - 1].id + 1;
+    this.cvList.push(cv);
+  }
+  removeCvById(id: number): void {
+    var index = this.cvList.findIndex((el) => el.id == id);
+    this.cvList[index].deleted = true;
   }
 }

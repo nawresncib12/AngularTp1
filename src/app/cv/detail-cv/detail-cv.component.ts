@@ -12,12 +12,18 @@ export class DetailCvComponent implements OnInit {
   cv: Cv = new Cv(0, 'unkown', 'unkown', 'unkown', 11, 11111111);
   constructor(
     private cvService: CvService,
-    private activeRoute: ActivatedRoute
+    private activeRoute: ActivatedRoute,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
     this.activeRoute.params.subscribe((params) => {
       this.cv = this.cvService.getCvById(params['id']);
     });
+  }
+  deletecv() {
+    this.cvService.removeCvById(this.cv.id);
+    const link = ['cv'];
+    this.router.navigate(link);
   }
 }
